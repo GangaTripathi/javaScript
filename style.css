@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(270deg, #000000, #1a1a1a, #2b2b2b);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.container {
+  width: 600px;
+  height: 360px;
+  background: #d9a5a5;
+  border-radius: 20px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+#quote {
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+/* BUTTON */
+button {
+  padding: 12px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #34ebc3, #2bbfa1);
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.95);
+}
